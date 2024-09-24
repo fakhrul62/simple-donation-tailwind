@@ -9,8 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="sticky top-0"></header>
+        <section class="backdrop-blur-lg">
+            <div class="bg-[#F9F7F3] bg-opacity-75 pb-4">
+                <div
+                    class="flex flex-col items-start lg:flex-row lg:items-center lg:justify-between flex-wrap bg-transparent py-6 w-10/12 mx-auto">
+                    <div class="order-3 md:order-1">
+                        <button onclick="homeToBlog()"
+                            class="btn bg-lime-300 hover:bg-lime-200 px-6 text-lg font-semibold border-none lg:my-5">Blog
+                        </button>
+                    </div>
+                    <div class="flex justify-center items-center space-x-4 order-1 md:order-2">
+                        <img src="assets/logo.png" alt="logo">
+                        <p class="text-xl font-bold text-[#111111] text-nowrap">Donate Flood</p>
+                    </div>
+                    <div class="flex justify-center items-center space-x-4 order-2 my-5 lg:my-0">
+                        <img src="assets/coin.png" alt="coin">
+                        <p class="text-xl text-[#111111B3] font-medium"><span id="mainBalance">1000000</span> BDT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-4 py-6 w-10/12 mx-auto">
+                <button id="donation"
+                    class="btn bg-lime-300 hover:bg-lime-200 px-8  font-semibold shadow-none">Donation
+                </button>
+                <button id="history"
+                    class="btn bg-white hover:bg-gray-200 border border-[#1111114D] shadow-none px-8  font-semibold text-[#111111B3] ">History</button>
+            </div>
+        </section>
+    </header>
     
 </body>
 </html>
