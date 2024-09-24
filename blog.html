@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Donate Flood</title>
+
+    <!--import font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisiUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lexend-font">
+    <header class="lg:sticky lg:top-0">
+        <section class="backdrop-blur-xl">
+            <!-- nav bar start-->
+            <div class="bg-[#F9F7F3] pb-4">
+                <div
+                    class="flex flex-col items-start lg:flex-row lg:items-center lg:justify-between flex-wrap bg-transparent py-6 w-10/12 mx-auto">
+                    <div class="order-2 md:order-1">
+                        <button onclick="homeViaBlog()"
+                            class="btn bg-lime-300 hover:bg-lime-200 px-6 text-xl font-semibold border-none my-5 lg:my-5">Home
+                        </button>
+                    </div>
+                    <div class="flex justify-center items-center space-x-4 order-1 md:order-2">
+                        <img src="assets/logo.png" alt="logo">
+                        <p class="text-xl font-bold text-[#111111] text-nowrap">Donate Flood</p>
+                    </div>
+                    <div class="flex justify-center items-center space-x-4 order-2 ">
+                        <img src="assets/coin.png" alt="coin">
+                        <p class="text-xl text-[#111111B3] font-medium"><span id="blogBalance">1000000</span> BDT
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- nav bar end -->
+        </section>
+    </header>
+    <main>
+
+        <div class="w-10/12 mx-auto my-7">
+            <h1 class="text-4xl font-extrabold mb-5">FAQ'S</h1>
+            <div class="join join-vertical">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What types of donations (or) contributions do you accept?</div>
+                    <div class="collapse-content">
+                        <p>Donations can be made via credit card, check, wire transfer, and cash.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do I donate?</div>
+                    <div class="collapse-content">
+                        <p>You can easily donate your contribution on the website or through the mail. Click on the ‘donate’ button (in the header) and all charitable options will be made available.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What address do I send my contribution?</div>
+                    <div class="collapse-content">
+                        <p>You can mail your donation check directly to Flood Rescue Foundation, 11601 Blackhawk Drive, Austin, TX 78759-4208. A recipe for your donation will be returned to you by mail within 30days.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do I make a wire transfer donation?</div>
+                    <div class="collapse-content">
+                        <p>Contact the Foundation and we will provide you with the Routing and Account Number for your wire transfer.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">Is my donation tax deductible?</div>
+                    <div class="collapse-content">
+                        <p>You may be entitled to a tax deduction for your contribution, subject to general limitations depending upon circumstances, including whether or not you itemize deductions. Please consult your tax advisor to determine if you are entitled to a tax deduction.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do I make non-cash donations?</div>
+                    <div class="collapse-content">
+                        <p>We are not set up to receive non-cash donations. Try your local Goodwill, Salvation Army, or Veterans’ support organizations.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do I donate an estate to the Foundation?</div>
+                    <div class="collapse-content">
+                        <p>You can name the Flood Rescue Foundation as a beneficiary in your will/estate for a specific amount or a percentage, or designate the foundation as a beneficiary of your life insurance policy. We suggest consulting a legal professional before drafting a will or trust.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How can I print my donation receipt?</div>
+                    <div class="collapse-content">
+                        <p>Your donation receipt is emailed to immediately. Print out the email and submit to your tax accountant along with your tax documents.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do I modify my recurring donation?</div>
+                    <div class="collapse-content">
+                        <p>Login to your account and update your recurring donation amount directly.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- js -->
+    <script src="js/cf.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
