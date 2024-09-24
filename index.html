@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="sticky top-0"></header>
+    <header class="sticky top-0">
         <section class="backdrop-blur-lg">
             <div class="bg-[#F9F7F3] bg-opacity-75 pb-4">
                 <div
@@ -33,14 +35,108 @@
                 </div>
             </div>
             <div class="flex justify-center gap-4 py-6 w-10/12 mx-auto">
-                <button id="donation"
-                    class="btn bg-lime-300 hover:bg-lime-200 px-8  font-semibold shadow-none">Donation
+                <button id="donation" class="btn bg-lime-300 hover:bg-lime-200 px-8  font-semibold shadow-none">Donation
                 </button>
                 <button id="history"
                     class="btn bg-white hover:bg-gray-200 border border-[#1111114D] shadow-none px-8  font-semibold text-[#111111B3] ">History</button>
             </div>
         </section>
     </header>
-    
+    <main>
+        <section id="donation-page" class="">
+            <div class="w-10/12 mx-auto space-y-4">
+                <div class="border border-gray-200 rounded-2xl p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div>
+                            <img class="w-auto" src="assets/noakhali.png" alt="noakhali flood">
+                        </div>
+                        <div>
+                            <button
+                                class="flex gap-3 bg-[#1111110D] px-4 py-2.5 rounded-lg cursor-default mt-4 lg:mt-0">
+                                <img src="assets/coin.png" alt="coin">
+                                <p class="text-xl text-[#111111B3] font-medium"><span
+                                        id="noakhaliTotal">1000</span> BDT</p>
+                            </button>
+                            <h3 class="font-bold text-[#111111] text-xl my-4">Donate for Flood at Noakhali, Bangladesh
+                            </h3>
+                            <p class="font-light text-[#111111B3]">The residences and infrastructure in Noakhali have suffered serious damage as a result of the recent floods. Your contribution will assist in helping individuals impacted by this calamity by providing necessary necessities. No matter how big or small, every contribution counts. Please help us by contributing to the relief efforts and improving the lives of people who are less fortunate.
+
+                            </p>
+                            <form action="">
+                                <input
+                                    class="w-full p-5 border border-[#1111111A] rounded-lg focus:outline-gray-400 placeholder:font-light mt-6 mb-4"
+                                    type="text" name="" id="donatAmountNoakhali"
+                                    placeholder="Write Donation Amount" required>
+                                <button id="noakhaliDonate"
+                                    class="btn w-full bg-lime-300 hover:bg-lime-200 px-6 text-xl font-semibold border-none">Donate
+                                    Now
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-2xl p-8 mb-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div>
+                            <img class="" src="assets/feni.png" alt="noakhali flood">
+                        </div>
+                        <div>
+                            <button
+                                class="flex gap-3 bg-[#1111110D] px-4 py-2.5 rounded-lg cursor-default mt-4 lg:mt-0">
+                                <img src="assets/coin.png" alt="coin">
+                                <p class="text-xl text-[#111111B3] font-medium"><span
+                                        id="feniTotal">6000</span> BDT</p>
+                            </button>
+                            <h3 class="font-bold text-[#111111] text-xl my-4">Donate for Flood Relief in Feni,Bangladesh
+                            </h3>
+                            <p class="font-light text-[#111111B3]"> Local villages in Feni have suffered greatly as a result of the recent floods, causing significant damage and disruption. Thank you for your kind donation! It will assist in providing food, clean water, and medical supplies to individuals affected by this disaster, as well as immediate relief. When we work together, we can provide vital support and aid in the reconstruction of lives following this tragedy. Each and every contribution goes toward truly making a difference. To help individuals in immediate need, kindly think about making a donation today.
+                            </p>
+                            <form action="">
+                                <input
+                                    class="w-full p-5 border border-[#1111111A] rounded-lg focus:outline-gray-400 placeholder:font-light mt-8 mb-6"
+                                    type="text" name="" id="feniAmount" placeholder="Write Donation Amount">
+                                <button id="feni-donation-button"
+                                    class="btn w-full bg-lime-300 hover:bg-lime-200 px-6 text-xl font-semibold border-none">Donate
+                                    Now
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-2xl p-8 mb-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div>
+                            <img class="" src="assets/quota-protest.png" alt="noakhali flood">
+                        </div>
+                        <div">
+                            <button
+                                class="flex gap-3 bg-[#1111110D] px-4 py-2.5 rounded-lg cursor-default mt-4 lg:mt-0">
+                                <img src="assets/coin.png" alt="coin">
+                                <p class="text-xl text-[#111111B3] font-medium"><span
+                                        id="quotaTotal">2400</span> BDT</p>
+                            </button>
+                            <h3 class="font-bold text-[#111111] text-xl my-4">Aid for Injured in the Quota Movement</h3>
+                            <p class="font-light text-[#111111B3]"> The current Quota movement has caused serious suffering for a great number of people as well as multiple injuries. In order to provide individuals affected with medical attention, rehabilitation, and essential supplies, your contribution is essential. By making a donation, you make it possible for injured people to get the attention and assistance they require during this trying time. Each and every donation is extremely important in lessening their suffering and promoting their healing. We ask that you please think about contributing to help these courageous people in their hour of need.
+</p>
+                            <form action="">
+                                <input
+                                    class="w-full p-5 border border-[#1111111A] rounded-lg focus:outline-gray-400 placeholder:font-light mt-8 mb-6"
+                                    type="text" name="" id="quotaAmount" placeholder="Write Donation Amount">
+                                <button id="quota-donation-button"
+                                    class="btn w-full bg-lime-300 hover:bg-lime-200 px-6 text-xl font-semibold border-none">Donate
+                                    Now
+                                </button>
+                            </form>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        
+    </main>
 </body>
+
 </html>
